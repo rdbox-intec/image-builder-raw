@@ -6,6 +6,11 @@ jobs:
       - checkout
 
       - run:
+        name: Create x86 raw image
+        command: |
+          make x86-raw-image
+
+      - run:
           name: Create RPi raw image
           command: |
             make rpi-raw-image

@@ -3,6 +3,9 @@ default: build
 build:
 	docker build -t image-builder-raw .
 
+x86-raw-image: build
+	docker run --rm --privileged -v $(shell pwd):/workspace image-builder-raw /builder/x86/build.sh
+
 rpi-raw-image: build
 	docker run --rm --privileged -v $(shell pwd):/workspace image-builder-raw /builder/rpi/build.sh
 
