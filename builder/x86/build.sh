@@ -9,8 +9,8 @@ fi
 ### setting up some important variables to control the build process
 BUILD_RESULT_PATH="/workspace"
 IMAGE_PATH="x86-raw.img"
-SD_CARD_SIZE=1300
-BOOT_PARTITION_SIZE=1300
+SD_CARD_SIZE=4500
+BOOT_PARTITION_SIZE=4500
 
 # create empty BOOT/ROOTFS image file
 # - SD_CARD_SIZE in MByte
